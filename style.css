@@ -1,8 +1,8 @@
 :root{
-  --bg-color: #d4d4d4;
+  --bg-color: #a5a5a5;
   --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --like: rgb(161, 199, 161);
-  --dislike: rgb(201, 157, 157); 
+  --dislike: rgb(201, 157, 157);
 }
 
 body{
@@ -42,7 +42,6 @@ button:hover{
   gap: 10px;
   padding: 2rem;
   border-radius: 50px;
-  border: 3px solid red;
   margin: 20px 10px;
   min-height: 100px;
 }
@@ -55,6 +54,10 @@ button:hover{
   display: none;
 }
 
+#likeDogsContainer, #dislikeDogsContainer{
+  border: 1px solid #525252;
+}
+
 #like:hover, #likeDogsContainer{
   background-color: var(--like);
 }
@@ -63,7 +66,12 @@ button:hover{
   background-color: var(--dislike);
 }
 
+#skip:hover{
+  background-color: #ffffff3b;
+}
+
 #mainPhotoContainer, #mainPhotoContainer img{
+  max-width: 100vw;
   height: 500px;
 }
 
@@ -112,5 +120,8 @@ button:hover{
 @media (max-width: 638px){
   #mainContainer{
     grid-template-columns: 1fr;
+  }
+  h1{
+    text-align: center;
   }
 }
